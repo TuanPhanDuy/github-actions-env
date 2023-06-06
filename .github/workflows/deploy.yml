@@ -8,6 +8,7 @@ env:
   MONGODB_DB_NAME: mongodatabase
 jobs:
   test:
+    environment: secret-testing
     env: 
       MONGODB_CLUSTER_ADDRESS: github-actions.2n9g8ad.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
